@@ -20,10 +20,8 @@ class SignUp extends React.Component{
         }
     }
 
-
     handleSubmit = async event => {
         event.preventDefault()
-
         const {displayName, email, password, confirmPass} = this.state
 
         if(password !== confirmPass)
@@ -35,7 +33,6 @@ class SignUp extends React.Component{
         try
         {
             const {user} = await auth.createUserWithEmailAndPassword(email, password)
-
             await createUserProfileDocument(user, {displayName})
 
             // this will clear the form
@@ -51,7 +48,6 @@ class SignUp extends React.Component{
 
     handleChange = event => {
         const {name, value} = event.target
-
         this.setState({[name]: value})
     }
 
@@ -89,7 +85,7 @@ class SignUp extends React.Component{
                         name='password'
                         value={password}
                         onChange={this.handleChange}
-                        label='Email'
+                        label='Password'
                         required
                     />
 
@@ -105,7 +101,6 @@ class SignUp extends React.Component{
                     <CustomButton type='submit'>Sign Up</CustomButton>
 
                 </form>
-
             </div>
         )
     }
