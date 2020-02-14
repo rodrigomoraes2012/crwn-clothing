@@ -11,7 +11,7 @@ curl -o- -L https://yarnpkg.com/install.sh | bash
 
 ## Scripts
 
-### git clone ...crwn-clothing.git
+### `git clone ...crwn-clothing.git`
 
 ### `yarn`
 
