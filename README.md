@@ -13,6 +13,8 @@ curl -o- -L https://yarnpkg.com/install.sh | bash
 
 ### `git clone ...crwn-clothing.git`
 
+To clone this repo
+
 ### `yarn`
 
 This will install all the dependencies for the cloned project
